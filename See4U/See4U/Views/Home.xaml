@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="See4U.Home">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#f3eff4">
+            
+            <Frame
+                Visual="Default"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="Start"
+                WidthRequest="450"
+                Margin="0"
+                BackgroundColor="white"
+                HasShadow="True">
+                <StackLayout>
+                    <Label Text="See4u." TextColor="#fea09c" FontSize="30" FontAttributes="Bold"/>
+                    </StackLayout>
+            </Frame>
+
+            <Frame
+                Visual="Default"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="350"
+                HeightRequest="250"
+                Margin="25"
+                CornerRadius="15"
+                BackgroundColor="#fffeff"
+                HasShadow="True">
+                <StackLayout>
+                    <Label Text="WELCOME BACK!" TextColor="#3a3643"  HorizontalOptions="Center" FontSize="25" FontAttributes="None"/>
+                    <Button
+                        VerticalOptions="CenterAndExpand"
+                        CornerRadius="50"
+                        BackgroundColor="#fea09b"
+                        Margin="1"
+                        Text="LATEST VISION TEST"
+                        TextColor="White"
+                        FontSize="Body"
+                        FontAttributes="Bold"
+                        >             
+                    </Button>
+                    
+                </StackLayout>
+             </Frame>
+
+            <Frame
+                Visual="Material"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Start"
+                WidthRequest="300"
+                HeightRequest="35"
+                Margin="2"
+                CornerRadius="5"
+                BackgroundColor="#f7f3f8"
+                HasShadow="True">
+                <SearchBar  HorizontalOptions="FillAndExpand" TextTransform="Lowercase" Text="Look for lens frames..." FontAttributes="Italic" FontSize="Small" TextColor="#c5cbc9"  >  </SearchBar>
+            </Frame>
+
+            <CarouselView>
+                
+            </CarouselView>
+
+
+
+            <Button HorizontalOptions="End" VerticalOptions="Center" Margin="5" FontSize="15" CornerRadius="5" BackgroundColor="#fea09b"  Text="Logout" TextColor="white" Clicked="Handle_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

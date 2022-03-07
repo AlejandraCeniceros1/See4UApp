@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:See4U.Views" xmlns:local1="clr-namespace:See4U"
+            x:Class="See4U.Views.TabbedPage"
+            BarBackgroundColor="#f7f3f8" UnselectedTabColor="#f7f3f8" SelectedTabColor="#e7b5b2"
+            >
+
+
+    <local1:Home IconImageSource="hogar.png"/>
+    <local:Eyes IconImageSource="eye.png"/>
+    <local:Profile IconImageSource="user.png"/>
+</TabbedPage>
